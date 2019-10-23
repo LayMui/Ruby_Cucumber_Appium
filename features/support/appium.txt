@@ -1,0 +1,10 @@
+[caps]
+platformName = "iOS"
+deviceName = "iPhone 7"
+platformVersion = "12.2"
+app = "/Users/lay.mui/Library/Developer/Xcode/DerivedData/Desk-eattgqttrmcniuchonszxzbtembb/Build/Products/Debug-iphonesimulator/Desk.app"
+autoAcceptAlerts = true
+
+[appium_lib]
+sauce_username = false
+sauce_access_key = false
