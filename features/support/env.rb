@@ -10,7 +10,6 @@ end
 
 #creating an array from the data in the YML file
 #appLoginDetails = YAML.load_file("features/support/appLoginDetails.yml")
-
 #this environment variable to choose which device we would do our automated tests on
 case ENV['DEVICE_NAME']
   when 'ipad simulator'
@@ -51,6 +50,6 @@ After do
   $driver.driver_quit
 end
 
-def wait_for
-  Selenium::WebDriver::Wait.new(:timeout => 30).until { yield }
-end
+#def wait_for
+#  Selenium::WebDriver::Wait.new(:timeout => 30).until { yield }
+#end
