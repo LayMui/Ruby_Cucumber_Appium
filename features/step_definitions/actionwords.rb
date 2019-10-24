@@ -57,27 +57,12 @@ module Actionwords
 
   def i_enter_the_default_otp(string)
     puts string
-    #wait { $driver.find_element(:accessibility_id, "otp 0").displayed?}
-    $driver.find_element(:accessibility_id, "otp 0").click
-    $driver.find_element(:accessibility_id, "otp 0").send_keys('1')
-    $driver.find_element(:accessibility_id, "otp 1").click
-    $driver.find_element(:accessibility_id, "otp 1").send_keys('2')
-    $driver.find_element(:accessibility_id, "otp 2").click
-    $driver.find_element(:accessibility_id, "otp 2").send_keys('3')
-    $driver.find_element(:accessibility_id, "otp 3").click
-    $driver.find_element(:accessibility_id, "otp 3").send_keys('4')
-    $driver.find_element(:accessibility_id, "otp 4").click
-    $driver.find_element(:accessibility_id, "otp 4").send_keys('5')
-    $driver.find_element(:accessibility_id, "otp 5").click
-    $driver.find_element(:accessibility_id, "otp 5").send_keys('6')
-    $driver.find_element(:accessibility_id, "otp 6").click
-    $driver.find_element(:accessibility_id, "otp 6").send_keys('7')
-    $driver.find_element(:accessibility_id, "otp 7").click
-    $driver.find_element(:accessibility_id, "otp 7").send_keys('8')
+    wait { $driver.find_element(:accessibility_id, "otp 0").send_keys(string)}
   end
 
   def i_should_see_the_one_more_thing_screen
-      wait.until_true { $driver.find_element(:accessibility_id, "Let's Go").click }
+    puts "I should see the One more thing screen"
+      wait { $driver.find_element(:accessibility_id, "Let's Go").click }
   end
 
   def i_should_see_the_main_dashboard_page
