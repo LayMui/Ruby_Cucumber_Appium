@@ -50,6 +50,4 @@ After do
   $driver.driver_quit
 end
 
-#def wait_for
-#  Selenium::WebDriver::Wait.new(:timeout => 30).until { yield }
-#end
+
